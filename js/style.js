@@ -15,13 +15,20 @@ export default {
   sources: {
     composite: {
       type: "vector",
-      tiles: [window.location.origin + "/data/tiles/{z}/{x}/{y}.pbf"],
+      tiles: [
+        window.location.origin +
+          window.location.pathname +
+          "/data/tiles/{z}/{x}/{y}.pbf"
+      ],
       minzoom: 2,
       maxzoom: 9
     }
   },
-  sprite: window.location.origin + "/sprites/sprite",
-  glyphs: window.location.origin + "/fonts/{fontstack}/{range}.pbf",
+  sprite: window.location.origin + window.location.pathname + "/sprites/sprite",
+  glyphs:
+    window.location.origin +
+    window.location.pathname +
+    "/fonts/{fontstack}/{range}.pbf",
   layers: [
     {
       id: "background",
