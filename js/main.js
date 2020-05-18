@@ -47,7 +47,7 @@ const updateMap = date => {
 // Load csv cases per county
 // Load csv cases per county
 map.on("style.load", function() {
-  fetch("/data/covid-cases.csv")
+  fetch("data/covid-cases.csv")
     .then(response => response.text())
     .then(data => {
       window.caseData = d3.csvParse(data);
