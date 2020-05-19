@@ -33,7 +33,7 @@ export default {
     {
       id: "background",
       type: "background",
-      paint: { "background-color": "#1B2229" }
+      paint: { "background-color": "#fff" }
     },
     {
       id: "county-fill",
@@ -41,7 +41,7 @@ export default {
       source: "composite",
       "source-layer": "us_county_albersusa",
       layout: {},
-      paint: { "fill-color": "#ccc" }
+      paint: { "fill-color": "#fff" }
     },
     {
       id: "county-boundaries",
